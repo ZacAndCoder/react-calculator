@@ -1,0 +1,35 @@
+#example {
+  left: 200px;
+}
+#calculator {
+  border: 2px solid black;
+  height: 337px;
+  width: 275px;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#display {
+  border: 1px solid black;
+  height: 75px;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+button {
+  border: 1px solid black;
+  height: 50px;
+  width: 25%;
+  font-size: 30px;
+}
+button:active {
+  background-color: white;
+}
+.wide-button {
+  width: 50%;
+  background-color: pink;
+}
