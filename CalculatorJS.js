@@ -74,12 +74,13 @@ class Calculator extends React.Component {
           input: this.state.input.concat(event.target.value)
         });
       }
-    } else { //too long to fit in display//
-      return;
+    } else { //If input is too long, alert user//
+      this.setState({
+        input: "This operation is too long"
+      });
     }
   }
   handleOperator(event) {
-    //make sure it's okay to use document innerHTML instead of this.state.input//
     if (this.state.hasBeenEvaluated > 0 && document.querySelector("#display").innerHTML.match(endsWithNumber)) {
       this.setState({
         result: this.state.result + 1,
