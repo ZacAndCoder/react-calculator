@@ -77,7 +77,9 @@ class Calculator extends React.Component {
     } else { //If input is too long, alert user and clear input//
       alert("This operation is too long.");
       this.setState({
-        input: []
+        input: [],
+        result: 0,
+        hasBeenEvaluated: 0
       });
     }
   }
