@@ -74,9 +74,10 @@ class Calculator extends React.Component {
           input: this.state.input.concat(event.target.value)
         });
       }
-    } else { //If input is too long, alert user//
+    } else { //If input is too long, alert user and clear input//
+      alert("This operation is too long.");
       this.setState({
-        input: "This operation is too long"
+        input: []
       });
     }
   }
